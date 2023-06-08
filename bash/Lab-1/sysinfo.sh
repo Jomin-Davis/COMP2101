@@ -8,7 +8,7 @@ echo Host Name: $hostname
 name_and_version=$(lsb_release -a | awk '/Description:/{print $2, $3, $4}')
 echo Operating System name and version: $name_and_version
 
-# Getting all ip address here
+# Getting ip address here
 ip_address=$(hostname -I)
 echo IP Addresses: 
 echo $ip_address
